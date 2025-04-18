@@ -1,0 +1,377 @@
+# Frases de Treinamento para Dialogflow - Soluctions
+
+## Boas-Vindas
+olá
+oi
+bom dia
+boa tarde
+boa noite
+olá, tudo bem?
+oi, preciso de ajuda
+quero saber mais sobre a Soluctions
+vocês podem me ajudar?
+gostaria de informações
+preciso de ajuda com transformação digital
+como vocês podem me ajudar?
+estou interessado nos seus serviços
+quero conhecer a Soluctions
+oi, sou novo aqui
+
+## Serviços_Geral
+quais serviços vocês oferecem?
+o que vocês fazem?
+como podem me ajudar?
+quero conhecer os serviços
+que tipo de soluções vocês oferecem?
+me conte sobre seus serviços
+quais são as especialidades da Soluctions?
+o que a Soluctions faz?
+vocês trabalham com que tipo de solução?
+quais os serviços disponíveis?
+que tipo de ajuda vocês oferecem?
+no que vocês são especializados?
+preciso entender o que vocês fazem
+quais são os serviços da empresa?
+que soluções digitais vocês oferecem?
+
+## Serviço_Anúncios
+fale sobre gestão de anúncios
+como funcionam os anúncios?
+gestão de ads
+google ads
+meta ads
+facebook ads
+campanhas de anúncios
+quanto custa para gerenciar anúncios?
+como funciona o serviço de gestão de ads?
+vocês trabalham com Google Ads?
+podem gerenciar minhas campanhas?
+quero anunciar minha empresa
+preciso de ajuda com ads
+como otimizar campanhas de anúncios?
+quero aumentar conversões nos meus anúncios
+vocês têm case de sucesso em anúncios?
+
+## Serviço_LandingPages
+landing pages
+como funciona o serviço de landing page?
+vocês criam landing pages?
+quanto custa uma landing page?
+preciso de uma página de conversão
+quero uma página para captura de leads
+vocês fazem landing pages responsivas?
+a hospedagem da landing page está incluída?
+quanto tempo leva para criar uma landing page?
+vocês integram a landing page com CRM?
+preciso de uma página para minha campanha
+quero uma página que converta melhor
+landing page com hospedagem
+vocês entregam o domínio também?
+quero uma página para meu produto
+
+## Serviço_SocialMedia
+fale sobre social media
+como funciona a gestão de redes sociais?
+vocês gerenciam Instagram?
+quanto custa gestão de redes sociais?
+preciso de ajuda com Facebook
+vocês fazem posts para LinkedIn?
+como funciona o serviço de social media com IA?
+vocês criam conteúdo para redes sociais?
+gerenciamento de Instagram
+preciso de um social media manager
+quanto posts por mês vocês fazem?
+vocês respondem comentários também?
+quero melhorar minha presença nas redes sociais
+preciso de estratégia para Instagram
+vocês trabalham com TikTok?
+
+## Serviço_Chatbots
+fale sobre chatbots
+como funcionam seus chatbots?
+quanto custa um chatbot?
+vocês criam assistentes virtuais?
+preciso de um chatbot para meu site
+quero automatizar atendimento
+vocês fazem chatbot para WhatsApp?
+o chatbot funciona 24 horas?
+como o chatbot responde às perguntas?
+preciso de chatbot com IA
+quero um atendente virtual
+como integrar chatbot no meu site?
+chatbot para qualificação de leads
+vocês têm chatbot para e-commerce?
+quanto tempo leva para implementar um chatbot?
+
+## Serviço_Analytics
+fale sobre analytics
+como funciona o serviço de analytics?
+vocês fazem dashboards?
+quanto custa implementar analytics?
+preciso monitorar meus resultados
+quero entender o comportamento dos clientes
+vocês implementam Google Analytics?
+como funcionam seus relatórios?
+analytics e BI
+preciso de insights dos meus dados
+quero medir o ROI das campanhas
+vocês montam dashboards personalizados?
+preciso de dados em tempo real
+quero uma visão consolidada das métricas
+vocês integram dados de várias fontes?
+
+## Serviço_Consultoria
+fale sobre consultoria digital
+como funciona a consultoria?
+quanto custa uma consultoria?
+preciso de diagnóstico digital
+quero melhorar minha estratégia online
+vocês fazem análise da concorrência?
+consultoria em marketing digital
+consultoria estratégica
+como funciona o processo de consultoria?
+quero uma análise do meu site
+preciso de consultoria para mídias sociais
+vocês fazem recomendações estratégicas?
+quanto tempo dura uma consultoria?
+quero saber como está minha presença digital
+vocês fazem benchmark de mercado?
+
+## Planos_Geral
+quanto custa?
+preços
+valores
+pacotes
+planos
+qual o investimento?
+quanto vou pagar?
+quais são os pacotes?
+me fale sobre os preços
+quais são os planos disponíveis?
+quanto custam os serviços?
+quais opções de pacotes existem?
+quero saber valores
+qual o preço do serviço?
+vocês têm diferentes planos?
+
+## Plano_Prata
+me fale sobre o pacote prata
+quanto custa o plano prata?
+o que está incluso no pacote prata?
+quero saber detalhes do plano prata
+o plano prata atende pequenas empresas?
+quais os benefícios do pacote prata?
+plano de 1999
+pacote básico
+quero entender o plano inicial
+o que eu ganho com o pacote prata?
+o pacote prata inclui quantas redes sociais?
+quero contratar o plano prata
+posso fazer upgrade do plano prata depois?
+o pacote prata tem limitações?
+o plano prata é bom para começar?
+
+## Plano_Ouro
+me fale sobre o pacote ouro
+quanto custa o plano ouro?
+o que está incluso no pacote ouro?
+quero saber detalhes do plano ouro
+o plano ouro é o mais popular?
+quais os benefícios do pacote ouro?
+plano de 3499
+pacote intermediário
+quero entender o plano mais escolhido
+o que eu ganho com o pacote ouro?
+o pacote ouro inclui chatbot?
+quero contratar o plano ouro
+vale a pena o plano ouro?
+o pacote ouro tem limitações?
+o plano ouro é bom custo-benefício?
+
+## Plano_Platina
+me fale sobre o pacote platina
+quanto custa o plano platina?
+o que está incluso no pacote platina?
+quero saber detalhes do plano platina
+o plano platina é completo?
+quais os benefícios do pacote platina?
+plano de 5999
+pacote premium
+quero entender o plano avançado
+o que eu ganho com o pacote platina?
+o pacote platina inclui landing page?
+quero contratar o plano platina
+o plano platina tem campanhas ilimitadas?
+o pacote platina inclui IA avançada?
+o plano platina é para grandes empresas?
+
+## Cases_Geral
+cases de sucesso
+exemplos de resultados
+clientes satisfeitos
+projetos anteriores
+portfólio
+quais empresas vocês já atenderam?
+podem mostrar alguns cases?
+quero ver resultados reais
+vocês têm cases no meu segmento?
+como vocês ajudaram outras empresas?
+mostrem casos de sucesso
+exemplos de trabalhos realizados
+quero ver resultados que vocês já entregaram
+vocês têm números de sucesso?
+quais histórias de sucesso vocês têm?
+
+## Case_B2B
+fale sobre o case de indústria
+case B2B
+case LinkedIn
+resultados para indústria
+vocês têm experiência com B2B?
+como vocês ajudaram empresas B2B?
+case da metalúrgica
+resultados em LinkedIn Ads
+vocês têm case para empresas B2B?
+como vocês geram leads B2B?
+quero ver o caso da indústria
+resultados para negócios B2B
+vocês trabalham com indústrias?
+como posso melhorar meu B2B?
+vocês têm case no setor industrial?
+
+## Case_Varejo
+fale sobre o case de varejo
+case e-commerce
+case de moda
+resultados para varejo
+vocês têm experiência com e-commerce?
+como vocês ajudaram empresas de varejo?
+case da loja online
+resultados em vendas online
+vocês têm case para lojas?
+como vocês aumentam vendas em e-commerce?
+quero ver o caso da marca de moda
+resultados para lojas virtuais
+vocês trabalham com varejo?
+como posso vender mais online?
+vocês têm case no setor de moda?
+
+## Case_Tecnologia
+fale sobre o case de tecnologia
+case startup
+case SaaS
+resultados para startups
+vocês têm experiência com tecnologia?
+como vocês ajudaram empresas de tecnologia?
+case da startup de software
+resultados com chatbot
+vocês têm case para startups?
+como vocês ajudaram empresas de software?
+quero ver o caso da startup tech
+resultados para empresas de tecnologia
+vocês trabalham com SaaS?
+como posso melhorar meu suporte tech?
+vocês têm case no setor de tecnologia?
+
+## MarketingDigital
+quem é o rei do marketing?
+melhores estratégias de marketing
+referências em marketing
+como melhorar meu marketing digital?
+quais são as tendências de marketing?
+dicas de marketing digital
+vocês seguem algum líder de marketing?
+como vocês aplicam as teorias de marketing?
+estratégias avançadas de marketing
+quem vocês consideram referência em marketing?
+qual a metodologia de marketing de vocês?
+me fale sobre marketing moderno
+quem é Philip Kotler?
+como o marketing evoluiu?
+qual sua abordagem de marketing digital?
+
+## Contato
+como posso entrar em contato?
+qual o telefone de vocês?
+qual o email para contato?
+onde vocês estão localizados?
+quero falar com um atendente
+preciso de contato com a equipe
+como faço para falar com vocês?
+quero falar com um consultor
+qual o contato para suporte?
+como chego até vocês?
+quais são os canais de atendimento?
+vocês atendem por WhatsApp?
+quero tirar dúvidas com alguém
+vocês têm escritório físico?
+horário de atendimento
+
+## AgendarReuniao
+quero agendar uma reunião
+como marco uma reunião?
+gostaria de conversar com um consultor
+quero conhecer mais sobre os serviços
+posso marcar uma call?
+agenda de reuniões
+quero uma reunião de apresentação
+como agendo uma demonstração?
+quero conversar sobre projeto
+desejo marcar um horário
+gostaria de uma reunião online
+como faço para agendar um horário?
+quero uma consultoria inicial
+posso marcar uma videochamada?
+quero falar sobre meu projeto
+
+## SolicitarDemo
+quero ver uma demo
+como funciona a demonstração?
+gostaria de ver o sistema funcionando
+quero entender melhor como funciona
+posso ver uma demonstração?
+como solicito uma demo?
+quero ver a plataforma
+demonstração do sistema
+como agendo uma demo?
+quero ver como funciona na prática
+posso ter acesso a uma versão de teste?
+gostaria de ver exemplos reais
+quero ver um tour do sistema
+como é a apresentação de vocês?
+quero ver demonstração dos serviços
+
+## Feedback_Negativo
+não gostei do atendimento
+tive problemas com o serviço
+quero fazer uma reclamação
+o serviço não atendeu minhas expectativas
+estou insatisfeito
+quero cancelar o serviço
+vocês demoraram muito para responder
+o resultado não foi o prometido
+tive uma experiência ruim
+quero falar sobre problemas que tive
+o projeto não saiu como esperado
+estou decepcionado com os resultados
+o atendimento foi insatisfatório
+não cumpriram o prazo
+quero resolver um problema
+
+## FAQ
+perguntas frequentes
+dúvidas comuns
+quanto tempo leva para ver resultados?
+existe fidelidade nos pacotes?
+como funciona o relatório de resultados?
+é possível personalizar os pacotes?
+vocês trabalham com pequenas empresas?
+como é feito o pagamento?
+qual o prazo de implementação?
+vocês têm contrato de serviço?
+posso cancelar quando quiser?
+como vocês medem resultados?
+quais são os prazos de entrega?
+vocês oferecem garantia?
+como funciona o suporte?
+vocês atendem outras cidades/países?
