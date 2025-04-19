@@ -2534,6 +2534,7 @@ header.scrolled {
  */
 
 /* Footer */
+/* Footer */
 .cyber-footer {
   background-color: var(--color-bg-secondary);
   color: var(--color-text-secondary);
@@ -2700,5 +2701,252 @@ header.scrolled {
   .cyber-tech-item {
     flex: 0 0 180px;
     height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajuste para telas menores */
+  :root {
+    --space-xl: 1.5rem;
+    --space-2xl: 2rem;
+  }
+  
+  .cyber-case-card, 
+  .cyber-case-card.reverse {
+    flex-direction: column;
+  }
+  
+  .cyber-case-media {
+    width: 100%;
+  }
+  
+  .cyber-footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cyber-footer-legal {
+    margin-top: var(--space-sm);
+  }
+  
+  .cyber-tech-slider {
+    height: 80px;
+  }
+  
+  .cyber-tech-item {
+    flex: 0 0 160px;
+    height: 80px;
+  }
+  
+  .cyber-tech-item img, 
+  .cyber-tech-item i {
+    height: 30px;
+  }
+  
+  .cyber-form-group {
+    margin-bottom: var(--space-md);
+  }
+  
+  .neon-button, 
+  .glitch-button,
+  .cyber-button-alt {
+    width: 100%;
+    margin-bottom: var(--space-sm);
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Ajustes para mobile */
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .cyber-chatbot-box {
+    width: 280px;
+    height: 350px;
+    right: -20px;
+  }
+  
+  .cyber-pricing-card {
+    padding: var(--space-md);
+  }
+  
+  .cyber-pricing-card.popular {
+    transform: none;
+  }
+  
+  .cyber-pricing-card.popular:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cyber-contact-form-container,
+  .cyber-contact-info-container {
+    padding: var(--space-md);
+  }
+  
+  .cyber-faq-container {
+    padding: var(--space-md);
+  }
+  
+  .cyber-team-card .cyber-team-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+  
+  .cyber-team-photo {
+    height: 200px;
+  }
+  
+  .cyber-feature-card, 
+  .cyber-service-card {
+    padding: var(--space-md);
+  }
+  
+  .cyber-case-media {
+    min-height: 200px;
+  }
+  
+  .cyber-case-content {
+    padding: var(--space-md);
+  }
+  
+  /* Ajustes para o Hero em mobile */
+  #hero .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animações específicas para mobile */
+@media (max-width: 768px) {
+  /* Desativa algumas animações em dispositivos móveis para melhorar performance */
+  .blob {
+    display: none;
+  }
+  
+  .cursor, 
+  .cursor-dot {
+    display: none;
+  }
+  
+  .cyber-card-glitch,
+  .logo-glitch {
+    animation: none;
+  }
+  
+  /* Simplifica algumas animações */
+  .cyber-feature-card:hover,
+  .cyber-service-card:hover,
+  .cyber-team-card:hover,
+  .cyber-case-card:hover,
+  .cyber-pricing-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cyber-feature-card:hover .cyber-feature-icon,
+  .cyber-service-card:hover .cyber-service-icon,
+  .cyber-case-card:hover .cyber-case-icon,
+  .cyber-pricing-card:hover .cyber-pricing-icon,
+  .cyber-contact-info-item:hover .cyber-contact-icon {
+    transform: none;
+  }
+}
+
+/* Darkmode ajustes (já é o padrão, mas garantindo compatibilidade) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Cores já estão em dark mode */
+  }
+}
+
+/* Print styles */
+@media print {
+  body, html {
+    background: white;
+    color: black;
+  }
+  
+  a {
+    color: #1a6c9a;
+    text-decoration: underline;
+  }
+  
+  .cyber-card, 
+  .cyber-feature-card, 
+  .cyber-service-card, 
+  .cyber-case-card, 
+  .cyber-team-card, 
+  .cyber-pricing-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+  
+  /* Esconde elementos não necessários para impressão */
+  .loader, 
+  .cursor, 
+  .cursor-dot,
+  .noise,
+  .scanline,
+  .scroll-indicator,
+  .cyber-chatbot-button,
+  .cyber-chatbot-box,
+  .mobile-nav-overlay,
+  .mobile-nav,
+  #particles-js {
+    display: none !important;
+  }
+  
+  /* Reset de cores para impressão */
+  .gradient-text,
+  .cyber-footer-logo,
+  .cyber-glitch-title {
+    color: #000 !important;
+    background: none !important;
+    -webkit-text-fill-color: currentColor !important;
+    text-shadow: none !important;
+  }
+  
+  /* Garante que o conteúdo caiba na página */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Melhora contraste para impressão */
+  .cyber-feature-icon,
+  .cyber-service-icon,
+  .cyber-case-icon,
+  .cyber-contact-icon {
+    background-color: #f0f0f0 !important;
+    color: #333 !important;
+  }
+  
+  /* Força quebra de página em seções importantes */
+  section {
+    page-break-before: always;
+  }
+  
+  /* Ajusta tamanhos de fonte para impressão */
+  h1 {
+    font-size: 24pt;
+  }
+  
+  h2 {
+    font-size: 20pt;
+  }
+  
+  h3 {
+    font-size: 16pt;
+  }
+  
+  p, li {
+    font-size: 12pt;
   }
 }

@@ -1,0 +1,316 @@
+/* 
+ * Soluctions S.A - Otimizações Mobile
+ * Arquivo de estilos complementares para resolver problemas específicos em dispositivos móveis
+ */
+
+/* 
+ * Breakpoints principais:
+ * - Smartphones: max-width: 640px
+ * - Tablets: max-width: 768px
+ * - Laptops/pequenos desktops: max-width: 1024px
+ */
+
+/* Ajustes globais para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Melhorar espaçamento e tamanho de texto */
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Ajustar altura de seções */
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  /* Reduzir tamanho de botões e melhorar espaçamento */
+  .neon-button, 
+  .glitch-button,
+  .cyber-button-alt {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Melhorar disposição de cards em grids */
+  .grid {
+    gap: 1rem;
+  }
+  
+  /* Corrigir sobreposição de elementos */
+  .cyber-stats-card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    margin: 0.5rem 0;
+    transform: none !important;
+  }
+}
+
+/* Ajustes específicos para smartphones */
+@media (max-width: 640px) {
+  /* Hero Section - corrigir layout vertical */
+  #hero {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+  
+  #hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  #hero p {
+    font-size: 1rem;
+  }
+  
+  /* Ajustar cards que estão com sobreposição */
+  .cyber-card-container {
+    margin-top: 3rem;
+    max-width: 100%;
+  }
+  
+  .cyber-stats-card {
+    width: auto;
+    max-width: 80%;
+    margin: 0.5rem auto;
+    position: relative;
+    transform: none !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .cyber-stats-card:first-of-type {
+    margin-top: 1rem;
+  }
+  
+  /* Corrigir alinhamento de feature cards */
+  .cyber-feature-card {
+    text-align: center;
+  }
+  
+  .cyber-feature-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Melhorar layout dos casos de sucesso */
+  .cyber-case-card {
+    flex-direction: column;
+  }
+  
+  .cyber-case-media {
+    width: 100%;
+    min-height: 200px;
+  }
+  
+  .cyber-case-content {
+    width: 100%;
+  }
+  
+  /* Ajustar equipe e parceiros */
+  .cyber-team-photo {
+    height: 180px;
+  }
+  
+  .cyber-partners {
+    gap: 1rem;
+  }
+  
+  .cyber-partner {
+    width: 70px;
+    height: 60px;
+  }
+  
+  /* Ajustar layout de preços */
+  .cyber-pricing-card {
+    margin-bottom: 2rem;
+  }
+  
+  /* Corrigir formulário de contato */
+  .cyber-contact-form-container,
+  .cyber-contact-info-container {
+    margin-bottom: 2rem;
+  }
+  
+  /* Corrigir rodapé */
+  .cyber-footer-social,
+  .cyber-footer-legal {
+    justify-content: center;
+  }
+  
+  /* Ajustar chatbot */
+  .cyber-chatbot-box {
+    bottom: 70px;
+    right: 10px;
+    height: 350px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+  }
+}
+
+/* Correções específicas para elementos problemáticos */
+@media (max-width: 768px) {
+  /* Corrigir sobreposição nas stats cards do hero */
+  .cyber-card-container {
+    position: relative;
+    padding-bottom: 3rem;
+  }
+  
+  .cyber-stats-card.absolute {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin: 0.5rem 0;
+  }
+  
+  /* Melhorar leitura das métricas */
+  .cyber-metric-card {
+    padding: 1rem;
+  }
+  
+  .cyber-metric-value {
+    font-size: 2rem;
+  }
+  
+  /* Corrigir tamanho dos ícones */
+  .cyber-service-icon,
+  .cyber-case-icon,
+  .cyber-pricing-icon,
+  .cyber-contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  /* Resolver problemas com o slider de tecnologias */
+  .cyber-tech-slider {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .cyber-tech-track {
+    animation-play-state: paused;
+  }
+  
+  /* Melhorar navegação mobile */
+  .mobile-nav {
+    width: 75%;
+  }
+}
+
+/* Otimizações de performance para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Desabilitar ou simplificar animações pesadas */
+  .particles-js-canvas-el {
+    opacity: 0.3;
+  }
+  
+  /* Simplificar efeitos de hover em touch devices */
+  .hover-lift:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Reduzir complexidade de alguns efeitos */
+  .cyber-grid {
+    opacity: 0.05;
+  }
+  
+  /* Melhorar performance do preloader */
+  .loader-progress-fill {
+    transition: width 1s ease-in-out;
+  }
+}
+
+/* Melhorias de acessibilidade para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Aumentar áreas de toque */
+  .cyber-nav-link,
+  .cyber-social-link,
+  .cyber-footer-links a {
+    padding: 0.5rem;
+    margin: 0.25rem;
+  }
+  
+  /* Melhorar contrastes em texto menor */
+  .cyber-tag,
+  .cyber-pricing-subtitle,
+  .cyber-case-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Aumentar tamanho de inputs em formulários */
+  .cyber-input,
+  .cyber-textarea,
+  .cyber-select {
+    padding: 0.75rem;
+    font-size: 16px; /* Evita zoom automático em iOS */
+  }
+}
+
+/* Correções específicas para navegadores móveis */
+@supports (-webkit-touch-callout: none) {
+  /* Correções específicas para Safari iOS */
+  .cyber-card-container,
+  .cyber-feature-card,
+  .cyber-service-card {
+    transform: translateZ(0); /* Força aceleração de hardware */
+  }
+  
+  /* Corrigir problema de 100vh em iOS */
+  #hero {
+    height: 100%;
+    min-height: 500px;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 360px) {
+  .cyber-feature-card,
+  .cyber-service-card,
+  .cyber-case-card,
+  .cyber-team-card,
+  .cyber-pricing-card {
+    padding: 0.75rem;
+  }
+  
+  .cyber-footer-legal {
+    gap: 0.75rem;
+  }
+  
+  .cyber-team-mini {
+    grid-column: span 2;
+  }
+  
+  .cyber-chatbot-box {
+    height: 300px;
+  }
+}
+
+/* Corrigir problemas específicos de sobreposição */
+.mobile-nav.active {
+  z-index: 1000;
+}
+
+.cyber-chatbot-box.active {
+  z-index: 1001;
+}
+
+/* Garantir que as tooltips e menus não ultrapassem */
+@media (max-width: 768px) {
+  .cyber-pricing-badge {
+    transform: translateY(-30%);
+    right: 1rem;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
