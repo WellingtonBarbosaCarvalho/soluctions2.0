@@ -1,316 +1,294 @@
 /* 
- * Soluctions S.A - Otimizações Mobile
- * Arquivo de estilos complementares para resolver problemas específicos em dispositivos móveis
+ * Soluctions S.A - Mobile Optimization
+ * Estilos específicos para aprimorar a experiência em dispositivos móveis
  */
 
-/* 
- * Breakpoints principais:
- * - Smartphones: max-width: 640px
- * - Tablets: max-width: 768px
- * - Laptops/pequenos desktops: max-width: 1024px
- */
-
-/* Ajustes globais para dispositivos móveis */
+/* ========== AJUSTES GERAIS ========== */
 @media (max-width: 768px) {
-  /* Melhorar espaçamento e tamanho de texto */
   body {
-    font-size: 14px;
+    overflow-x: hidden;
   }
-  
+
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 100%;
   }
-
-  /* Ajustar altura de seções */
+  
+  /* Ajustes tipográficos */
+  h1 {
+    font-size: 2.25rem !important;
+    line-height: 1.3;
+  }
+  
+  h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  h3 {
+    font-size: 1.4rem !important;
+  }
+  
+  /* Melhor espaçamento vertical */
   section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
   
-  /* Reduzir tamanho de botões e melhorar espaçamento */
-  .neon-button, 
-  .glitch-button,
-  .cyber-button-alt {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.8rem;
-  }
-  
-  /* Melhorar disposição de cards em grids */
-  .grid {
-    gap: 1rem;
-  }
-  
-  /* Corrigir sobreposição de elementos */
-  .cyber-stats-card {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    top: auto;
-    margin: 0.5rem 0;
-    transform: none !important;
+  #hero {
+    padding-top: 6rem;
   }
 }
 
-/* Ajustes específicos para smartphones */
-@media (max-width: 640px) {
-  /* Hero Section - corrigir layout vertical */
-  #hero {
-    min-height: auto;
-    padding-bottom: 3rem;
-  }
-  
-  #hero h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-  
-  #hero p {
-    font-size: 1rem;
-  }
-  
-  /* Ajustar cards que estão com sobreposição */
+/* ========== HERO SECTION (AJUSTE ESPECÍFICO) ========== */
+@media (max-width: 768px) {
+  /* Container principal */
   .cyber-card-container {
-    margin-top: 3rem;
-    max-width: 100%;
-  }
-  
-  .cyber-stats-card {
-    width: auto;
-    max-width: 80%;
-    margin: 0.5rem auto;
     position: relative;
+    margin: 2rem auto;
+    max-width: 85%;
+    overflow: visible;
     transform: none !important;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
   }
   
-  .cyber-stats-card:first-of-type {
-    margin-top: 1rem;
+  /* Cards estatísticos - versão grid */
+  .cyber-stats-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
   }
   
-  /* Corrigir alinhamento de feature cards */
-  .cyber-feature-card {
+  /* Efeitos dos cards e borda */
+  .cyber-card-border {
+    border-radius: 0.75rem;
+    opacity: 0.9;
+  }
+  
+  .cyber-card-glitch {
+    border-radius: 0.75rem;
+  }
+  
+  /* Reestilizar cards de estatísticas com grid simples */
+  .cyber-stats-card {
+    position: static !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+  }
+  
+  /* Colocar conteúdo em coluna para melhor visualização */
+  .cyber-stats-card .flex {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   
-  .cyber-feature-icon {
-    margin-left: auto;
-    margin-right: auto;
+  .cyber-stats-card .flex > div:first-child {
+    margin-bottom: 0.5rem;
   }
   
-  /* Melhorar layout dos casos de sucesso */
-  .cyber-case-card {
-    flex-direction: column;
+  .cyber-stats-card .flex > div:last-child {
+    text-align: center;
   }
   
-  .cyber-case-media {
-    width: 100%;
-    min-height: 200px;
+  .cyber-stats-card .h-10.w-10 {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
   
-  .cyber-case-content {
-    width: 100%;
-  }
-  
-  /* Ajustar equipe e parceiros */
-  .cyber-team-photo {
-    height: 180px;
-  }
-  
-  .cyber-partners {
-    gap: 1rem;
-  }
-  
-  .cyber-partner {
-    width: 70px;
-    height: 60px;
-  }
-  
-  /* Ajustar layout de preços */
-  .cyber-pricing-card {
-    margin-bottom: 2rem;
-  }
-  
-  /* Corrigir formulário de contato */
-  .cyber-contact-form-container,
-  .cyber-contact-info-container {
-    margin-bottom: 2rem;
-  }
-  
-  /* Corrigir rodapé */
-  .cyber-footer-social,
-  .cyber-footer-legal {
-    justify-content: center;
-  }
-  
-  /* Ajustar chatbot */
-  .cyber-chatbot-box {
-    bottom: 70px;
-    right: 10px;
-    height: 350px;
-    width: calc(100% - 20px);
-    max-width: 300px;
+  .cyber-stats-card .space-x-3 > * + * {
+    margin-left: 0;
   }
 }
 
-/* Correções específicas para elementos problemáticos */
+/* ========== ESTILIZAÇÃO DO CHATBOT MELHORADA ========== */
 @media (max-width: 768px) {
-  /* Corrigir sobreposição nas stats cards do hero */
-  .cyber-card-container {
-    position: relative;
-    padding-bottom: 3rem;
+  /* Container do chatbot */
+  #chatbot-container {
+    z-index: 1000 !important;
   }
   
-  .cyber-stats-card.absolute {
-    position: relative;
-    display: inline-block;
-    width: auto;
-    margin: 0.5rem 0;
-  }
-  
-  /* Melhorar leitura das métricas */
-  .cyber-metric-card {
-    padding: 1rem;
-  }
-  
-  .cyber-metric-value {
-    font-size: 2rem;
-  }
-  
-  /* Corrigir tamanho dos ícones */
-  .cyber-service-icon,
-  .cyber-case-icon,
-  .cyber-pricing-icon,
-  .cyber-contact-icon {
+  /* Botão do chatbot */
+  .cyber-chatbot-button {
     width: 50px;
     height: 50px;
-    font-size: 1.5rem;
-  }
-  
-  /* Resolver problemas com o slider de tecnologias */
-  .cyber-tech-slider {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .cyber-tech-track {
-    animation-play-state: paused;
-  }
-  
-  /* Melhorar navegação mobile */
-  .mobile-nav {
-    width: 75%;
-  }
-}
-
-/* Otimizações de performance para dispositivos móveis */
-@media (max-width: 768px) {
-  /* Desabilitar ou simplificar animações pesadas */
-  .particles-js-canvas-el {
-    opacity: 0.3;
-  }
-  
-  /* Simplificar efeitos de hover em touch devices */
-  .hover-lift:hover {
-    transform: none;
-    box-shadow: none;
-  }
-  
-  /* Reduzir complexidade de alguns efeitos */
-  .cyber-grid {
-    opacity: 0.05;
-  }
-  
-  /* Melhorar performance do preloader */
-  .loader-progress-fill {
-    transition: width 1s ease-in-out;
-  }
-}
-
-/* Melhorias de acessibilidade para dispositivos móveis */
-@media (max-width: 768px) {
-  /* Aumentar áreas de toque */
-  .cyber-nav-link,
-  .cyber-social-link,
-  .cyber-footer-links a {
-    padding: 0.5rem;
-    margin: 0.25rem;
-  }
-  
-  /* Melhorar contrastes em texto menor */
-  .cyber-tag,
-  .cyber-pricing-subtitle,
-  .cyber-case-subtitle {
-    color: rgba(255, 255, 255, 0.9);
-  }
-  
-  /* Aumentar tamanho de inputs em formulários */
-  .cyber-input,
-  .cyber-textarea,
-  .cyber-select {
-    padding: 0.75rem;
-    font-size: 16px; /* Evita zoom automático em iOS */
-  }
-}
-
-/* Correções específicas para navegadores móveis */
-@supports (-webkit-touch-callout: none) {
-  /* Correções específicas para Safari iOS */
-  .cyber-card-container,
-  .cyber-feature-card,
-  .cyber-service-card {
-    transform: translateZ(0); /* Força aceleração de hardware */
-  }
-  
-  /* Corrigir problema de 100vh em iOS */
-  #hero {
-    height: 100%;
-    min-height: 500px;
-  }
-}
-
-/* Ajustes para telas muito pequenas */
-@media (max-width: 360px) {
-  .cyber-feature-card,
-  .cyber-service-card,
-  .cyber-case-card,
-  .cyber-team-card,
-  .cyber-pricing-card {
-    padding: 0.75rem;
-  }
-  
-  .cyber-footer-legal {
-    gap: 0.75rem;
-  }
-  
-  .cyber-team-mini {
-    grid-column: span 2;
-  }
-  
-  .cyber-chatbot-box {
-    height: 300px;
-  }
-}
-
-/* Corrigir problemas específicos de sobreposição */
-.mobile-nav.active {
-  z-index: 1000;
-}
-
-.cyber-chatbot-box.active {
-  z-index: 1001;
-}
-
-/* Garantir que as tooltips e menus não ultrapassem */
-@media (max-width: 768px) {
-  .cyber-pricing-badge {
-    transform: translateY(-30%);
+    bottom: 1rem;
     right: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+    z-index: 1000 !important;
+  }
+  
+  /* Caixa do chatbot melhorada */
+  .cyber-chatbot-box {
+    position: fixed !important;
+    bottom: 5rem !important;
+    right: 1rem !important;
+    width: calc(100% - 2rem) !important;
+    max-width: 320px !important;
+    height: 400px !important;
+    z-index: 1001 !important;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.5) !important;
+    border: 1px solid rgba(0, 243, 255, 0.3) !important;
+    transform-origin: bottom right;
+    animation: chatbot-appear 0.3s ease-out;
+  }
+  
+  /* Cabeçalho do chatbot */
+  .cyber-chatbot-header {
+    padding: 0.75rem 1rem;
+    background: linear-gradient(90deg, #00c3ff, #0099ff);
+  }
+  
+  .cyber-chatbot-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .cyber-chatbot-icon {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Área de mensagens */
+  .cyber-chatbot-messages {
+    padding: 1rem;
+    background-color: rgba(18, 18, 31, 0.95);
+  }
+  
+  /* Mensagens do bot e usuário */
+  .chatbot-message {
+    max-width: 85%;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    animation: message-appear 0.3s ease-out;
+  }
+  
+  .chatbot-message.user {
+    background: linear-gradient(135deg, #bc13fe10, #bc13fe30);
+    border: 1px solid rgba(188, 19, 254, 0.3);
+  }
+  
+  .chatbot-message.bot {
+    background: linear-gradient(135deg, #00f3ff10, #00f3ff30);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+  }
+  
+  /* Input e botão de envio */
+  .cyber-chatbot-input-container {
+    padding: 0.75rem;
+    background-color: rgba(10, 10, 25, 0.9);
+    border-top: 1px solid rgba(0, 243, 255, 0.2);
+  }
+  
+  .cyber-chatbot-input {
+    padding: 0.75rem 1rem;
+    border-radius: 1.5rem;
+    background: rgba(30, 30, 50, 0.8);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .cyber-chatbot-send {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #00f3ff, #0099ff);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+    transition: all 0.2s ease;
+  }
+  
+  .cyber-chatbot-send:active {
+    transform: scale(0.9);
+  }
+}
+
+/* Animações específicas para chatbot */
+@keyframes chatbot-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes message-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== GARANTIR QUE NÃO HAJA SOBREPOSIÇÃO DOS ELEMENTOS ========== */
+@media (max-width: 768px) {
+  /* Adicionar espaço para evitar sobreposições */
+  #hero, #services, #cases, #team, #pricing, #contact {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Certificar que o chatbot fica acima de todos os elementos */
+  #chatbot-container {
+    position: fixed;
+    z-index: 9999;
+  }
+  
+  /* Assegurar que o chatbot aberto não é sobreposto */
+  .cyber-chatbot-box.active {
+    z-index: 10000 !important;
+  }
+  
+  /* Melhoria na visualização quando o teclado virtual aparece */
+  @supports (-webkit-touch-callout: none) {
+    .cyber-chatbot-box.keyboard-visible {
+      bottom: 30% !important;
+      height: 300px !important;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+/* ========== CORRIGIR ESPECIFICAMENTE A VISUALIZAÇÃO EM TELAS PEQUENAS ========== */
+@media (max-width: 375px) {
+  .cyber-chatbot-box {
+    width: calc(100% - 1.5rem) !important;
+    right: 0.75rem !important;
+    max-width: none !important;
+  }
+  
+  .cyber-stats-card {
+    padding: 0.75rem;
+  }
+  
+  .cyber-stats-card .text-sm {
     font-size: 0.7rem;
-    padding: 0.25rem 0.5rem;
+  }
+  
+  .cyber-stats-card .text-xl {
+    font-size: 1rem;
+  }
+  
+  .cyber-stats-card .h-10.w-10 {
+    height: 2rem;
+    width: 2rem;
+    font-size: 0.8rem;
   }
 }
