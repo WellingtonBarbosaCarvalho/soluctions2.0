@@ -76,11 +76,13 @@ function initScrollObserver() {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
         
-        // Ativar contadores que estão visíveis
-        const counter = entry.target.querySelector('.counter');
-        if (counter && !counter.classList.contains('counted')) {
-          animateCounter(counter);
-          counter.classList.add('counted');
+        // Ativar TODOS os contadores dentro do elemento visível
+        const counters = entry.target.querySelectorAll('.counter:not(.counted)');
+        if (counters.length > 0) {
+          counters.forEach(counter => {
+            animateCounter(counter);
+            counter.classList.add('counted');
+          });
         }
       }
     });
@@ -89,8 +91,8 @@ function initScrollObserver() {
     rootMargin: '0px 0px -50px 0px'
   });
   
-  // Observar todos os elementos com classe 'reveal'
-  document.querySelectorAll('.reveal').forEach(element => {
+  // Observar todos os elementos com classe 'reveal' e os containers de métrica
+  document.querySelectorAll('.reveal, .cyber-metric-card').forEach(element => {
     revealObserver.observe(element);
   });
   
@@ -304,7 +306,10 @@ function initVisualEffects() {
  */
 function animateCounter(counter) {
   const target = parseInt(counter.getAttribute('data-target'));
-  const duration = 2000; // 2 segundos
+  if (isNaN(target)) return; // Evita erros se o data-target não for um número
+  
+  // Ajuste a duração da animação com base no valor alvo
+  const duration = target > 100 ? 2000 : 1500; 
   const frameDuration = 1000 / 60; // 60fps
   const totalFrames = Math.round(duration / frameDuration);
   const easeOutQuad = t => t * (2 - t);
@@ -327,6 +332,56 @@ function animateCounter(counter) {
   };
   
   animate();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Aplicar classe para evitar FOUC (Flash of Unstyled Content)
+  document.body.classList.add('fouc-ready');
+  
+  // Iniciar preloader
+  initPreloader();
+  
+  // Configurar observador para animações
+  initScrollObserver();
+  
+  // Iniciar interações UI
+  initUIInteractions();
+  
+  // Iniciar efeitos visuais
+  initVisualEffects();
+  
+  // Iniciar contadores imediatamente se estiverem visíveis
+  initCounters();
+  
+  // Configurar chatbot
+  initChatbot();
+  
+  // Verificar contadores novamente quando o scroll ocorrer
+  window.addEventListener('scroll', debounce(initCounters, 100));
+  
+  // Inicializar AOS (Animate on Scroll)
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+      offset: 50
+    });
+  }
+});
+
+// 5. Adicione uma função de debounce para evitar chamadas excessivas durante o scroll
+function debounce(func, wait) {
+  let timeout;
+  return function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      func.apply(context, args);
+    }, wait);
+  };
 }
 
 /**
